@@ -1,0 +1,47 @@
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 500;
+}
+
+section {
+  margin: 8px 0;
+}
+
+.banner-container,
+.legend-container,
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container {
+  position: relative;
+  max-width: 100%;
+}
+
+svg [class*="-1"] {
+  opacity: 1;
+}
+
+svg [class*="-2"],
+svg [class*="-3"],
+svg [class*="-4"] {
+  opacity: 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
