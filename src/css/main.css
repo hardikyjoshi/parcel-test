@@ -1,18 +1,121 @@
 body {
-  max-width: 1280px;
-  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
+  background-color: #040060;
+  color: #ffffff;
 }
+
+body::before {
+  content: "";
+  display: block;
+  height: 1024px;
+  width: 100%;
+  background-image: radial-gradient(
+    circle at 0 0,
+    rgba(117, 203, 255, 0.58),
+    #040060 46%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+/* Header styles start */
+header {
+  margin: 0 auto;
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+nav {
+  position: relative;
+}
+
+nav a {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a:hover,
+nav a:active,
+nav a:focus {
+  color: #ffffff;
+}
+
+nav a:first-child {
+  margin: 0 70px 4px 31px;
+}
+
+nav a.selected {
+  color: #ffda00;
+}
+
+nav a.selected::after {
+  content: "";
+  width: 18px;
+  height: 2px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffda00;
+  margin-top: 4px;
+}
+/* Header styles end */
 
 main {
   display: flex;
   flex-direction: column;
 }
 
+.content-container {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .title {
   font-weight: 500;
+  font-size: 18px;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.79px;
 }
+
+/* About section styles start */
+.about-title {
+  line-height: 1.44;
+  margin-bottom: 27px;
+}
+
+.about-content {
+  font-size: 18px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: 0.79px;
+  color: #ffffff;
+}
+.about-content ul {
+  margin-bottom: 95px;
+}
+.about-content li {
+  margin: 27px 0;
+}
+.about-content > p:last-child {
+  margin-bottom: 59px;
+}
+/* About section styles end */
 
 section {
   margin: 8px 0;
@@ -26,9 +129,21 @@ section {
   justify-content: center;
 }
 
+/* Carousel styles start */
 .img-container {
   position: relative;
   max-width: 100%;
+}
+
+.left-btn,
+.right-btn {
+  top: 50%;
+}
+.left-btn {
+  left: 0;
+}
+.right-btn {
+  right: 0;
 }
 
 svg [class*="-1"] {
@@ -40,8 +155,11 @@ svg [class*="-3"],
 svg [class*="-4"] {
   opacity: 0;
 }
+/* Carousel styles end */
 
-ul {
+/* Footer styles start */
+footer ul {
   display: flex;
   justify-content: space-evenly;
 }
+/* Footer styles end */
