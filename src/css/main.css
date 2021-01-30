@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Avenir","Roboto", sans-serif;
   font-weight: 100;
   background-color: #040060;
   color: #ffffff;
@@ -133,6 +133,12 @@ section {
 .img-container {
   position: relative;
   max-width: 100%;
+}
+
+.glider{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
 }
 
 .left-btn,
