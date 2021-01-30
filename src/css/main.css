@@ -1,5 +1,5 @@
 body {
-  font-family: "Avenir","Roboto", sans-serif;
+  font-family: "Avenir", "Roboto", sans-serif;
   font-weight: 100;
   background-color: #040060;
   color: #ffffff;
@@ -135,7 +135,7 @@ section {
   max-width: 100%;
 }
 
-.glider{
+.glider {
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -169,3 +169,53 @@ footer ul {
   justify-content: space-evenly;
 }
 /* Footer styles end */
+
+.slide-1 .st0,
+.slide-2 .st0,
+.slide-3 .st0 {
+  fill: #003600;
+}
+.slide-1 .st1,
+.slide-2 .st1 {
+  fill: #e34cff;
+}
+.slide-1 .st2,
+.slide-2 .st2 {
+  fill: #c400fa;
+}
+.slide-1 .st3,
+.slide-2 .st3 {
+  fill: #b000e4;
+}
+.slide-1 .st4,
+.slide-2 .st4 {
+  fill: #c100ed;
+}
+
+.slide-3 .st1 {
+  fill: #e34cff;
+}
+.slide-3 .st2 {
+  fill: #c400fa;
+}
+.slide-3 .st3 {
+  fill: #b000e4;
+}
+.slide-3 .st4 {
+  fill: #ff0024;
+}
+.slide-3 .st5 {
+  fill: #d6002f;
+}
+.slide-3 .st6 {
+  fill: #b70029;
+}
+.slide-3 .st7 {
+  fill: #ffea00;
+}
+.slide-3 .st8 {
+  fill: #ffd400;
+}
+.slide-3 .st9 {
+  fill: #ffc200;
+}
