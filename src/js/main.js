@@ -40,10 +40,8 @@ var callback = function () {
       const $currentSlideElements = document.querySelectorAll(
         `.${parentElClassName} .${$el}`
       );
-      // console.log(`.${parentElClassName} .${$el}-${frameId}`);
-      // console.log({ $currentSlideElements });
+
       for (i = 0; i < $currentSlideElements.length; i++) {
-        // console.log("opacity,frameId", 0, frameId);
         $currentSlideElements[i].style.opacity = 0;
       }
       $selectedElement.style.opacity = 1;
@@ -61,7 +59,6 @@ var callback = function () {
       if (timeFromLastUpdate > timePerFrame) {
         // hide all frames
         // and show the required one
-        // console.log("element", $element);
         updateOpacity(
           document.querySelectorAll("." + $element),
           $element,
@@ -111,13 +108,12 @@ var callback = function () {
       });
 
       if (~item.className.baseVal.indexOf("-1")) {
-        // console.log("opacity", 1);
         item.style.opacity = 1;
       }
     });
   }
 
-  const images = document.querySelectorAll(".img-container svg");
+  const images = document.querySelectorAll("img");
 
   Promise.all(
     Array.from(images).map((img) => {
@@ -129,10 +125,8 @@ var callback = function () {
     })
   ).then((results) => {
     if (results.every((res) => res)) {
-      // console.log("all images loaded successfully");
-
-      handleImagesLoadedState();
-
+      //Uncomment when adding SVG
+      // handleImagesLoadedState();
       new Glider(document.querySelector(".glider"), {
         slidesToShow: 1,
         draggable: false,
