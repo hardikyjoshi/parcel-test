@@ -160,12 +160,18 @@ img {
 .left-btn,
 .right-btn {
   top: 50%;
+  width: 18px;
+  height: 38px;
 }
 .left-btn {
   left: 0;
+  background-image: url(../assets/images/left-arrow.png);
+  margin-left: 20px
 }
 .right-btn {
   right: 0;
+  background-image: url(../assets/images/right-arrow.png);
+  margin-right: 20px
 }
 
 svg [class*="-1"] {
@@ -184,9 +190,41 @@ svg [class*="-4"] {
   flex-direction: column;
   align-items: flex-start;
   padding: 24px 0;
+  max-width: 969px;
 }
-
 /* Legend styles end */
+
+/* Graph styles start */
+.graph-container {
+  background: #fff;
+  flex-direction: column;
+  display: flex;
+  padding-top: 80px;
+}
+.graph-container .graph-row {
+  display: flex;
+  flex: 0;
+  align-self: center;
+  justify-content: space-between;
+  width: 969px;
+}
+.graph-container .graph-row.graphs {
+  margin-bottom: 80px;
+}
+.graph-row .title {
+  color: #000;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  margin: 0 0 33px 0;
+}
+.graph-container img {
+  max-width: 468px;
+}
+/* Graph styles end */
 
 /* Footer styles start */
 footer ul {
