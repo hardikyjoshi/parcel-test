@@ -194,38 +194,6 @@ svg [class*="-4"] {
 }
 /* Legend styles end */
 
-/* Graph styles start */
-.graph-container {
-  background: #fff;
-  flex-direction: column;
-  display: flex;
-  padding-top: 80px;
-}
-.graph-container .graph-row {
-  display: flex;
-  flex: 0;
-  align-self: center;
-  justify-content: space-between;
-  width: 969px;
-}
-.graph-container .graph-row.graphs {
-  margin-bottom: 80px;
-}
-.graph-row .title {
-  color: #000;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.7px;
-  margin: 0 0 33px 0;
-}
-.graph-container img {
-  max-width: 468px;
-}
-/* Graph styles end */
-
 /* Footer styles start */
 footer ul {
   display: flex;
